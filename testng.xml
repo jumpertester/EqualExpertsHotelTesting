@@ -1,0 +1,10 @@
+<suite name="Equal Experts Hotel Automation">
+    <test name="Test All">
+        <classes>
+            <class name="testng.TestInit" />
+            <class name="testng.CreateBooking" />
+            <class name="testng.DeleteBooking" />
+            <class name="testng.BookingNotCreated" />
+        </classes>
+    </test>
+</suite>
