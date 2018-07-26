@@ -12,6 +12,25 @@ public class Launcher {
         return new ChromeDriver();
     }
 
+    public static void setChromeDriver(){
+        String webDriverKey = "webdriver.chrome.driver";
+        String webDriverValue;
+        System.out.println(System.getProperty("os.name").toLowerCase());
+        String osType = System.getProperty("os.name").toLowerCase();
+
+        if(osType.contains("win")){
+            webDriverValue = System.getProperty("user.dir") +
+                    "/target/tmp_webdrivers/chromedriver-windows-32bit.exe";
+        }else if(osType.contains("mac")){
+            webDriverValue = System.getProperty("user.dir") +
+                    "/target/tmp_webdrivers/chromedriver";
+        } else{
+            throw new IllegalArgumentException("We are sorry but we do not support the operating system you are using.");
+        }
+        
+        System.setProperty(webDriverKey, webDriverValue);
+    }
+
     public static WebDriver getBrowser(WebDriver driver){
         String baseUrl = ("http://hotel-test.equalexperts.io/");
         driver.get(baseUrl);

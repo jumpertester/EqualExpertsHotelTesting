@@ -16,3 +16,5 @@ Inside the root directory is the runTest.bat file. Executing this file will perf
 **Test Results**
 
 On completion of running the tests navigate from the root directory to target/surefire-reports and open the file emailable-report.html in the browser of your choice.
+
+    

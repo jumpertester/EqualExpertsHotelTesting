@@ -16,11 +16,7 @@ public class TestInit {
 
     @BeforeSuite (description = "Setting the environment by deleting existing bookings.")
     public void beforeSuite(){
-        System.out.println("This is the Before Suite method.");
-        String webDriverKey = "webdriver.chrome.driver";
-        String webDriverValue = System.getProperty("user.dir") +
-                "/target/tmp_webdrivers/chromedriver-windows-32bit.exe";
-        System.setProperty(webDriverKey, webDriverValue);
+        Launcher.setChromeDriver();
         deleteBookings();
     }
 
