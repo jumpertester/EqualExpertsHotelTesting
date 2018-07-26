@@ -23,7 +23,7 @@ public class Launcher {
                     "/target/tmp_webdrivers/chromedriver-windows-32bit.exe";
         }else if(osType.contains("mac")){
             webDriverValue = System.getProperty("user.dir") +
-                    "/target/tmp_webdrivers/chromedriver";
+                    "/target/tmp_webdrivers/chromedriver-mac-64bit";
         } else{
             throw new IllegalArgumentException("We are sorry but we do not support the operating system you are using.");
         }

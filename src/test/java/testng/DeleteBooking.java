@@ -44,7 +44,7 @@ public class DeleteBooking {
 
     @DataProvider
     public Object[][] getBookingData() throws Exception{
-        Object[][] testObjArray = ExcelUtils.getTableArray(System.getProperty("user.dir")+"\\data\\DeleteBookingTestData.xlsx","Sheet1");
+        Object[][] testObjArray = ExcelUtils.getTableArray(System.getProperty("user.dir")+"/data/DeleteBookingTestData.xlsx","Sheet1");
         return (testObjArray);
     }
 

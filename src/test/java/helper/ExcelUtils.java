@@ -18,15 +18,16 @@ public class ExcelUtils {
     private static XSSFCell Cell;
     private static XSSFRow Row;
 
-    public static void main(String args[]) throws IOException{
-        String filePath = System.getProperty("user.dir")+"\\src\\test\\data\\CreateBookingTestData.xlsx";
+    //code used to debug spreadsheet issue with IOS
+    /*public static void main(String args[]) throws IOException{
+        String filePath = System.getProperty("user.dir")+"/data/CreateBookingTestData.xlsx";
         FileInputStream ExcelFile = new FileInputStream(filePath);
 
         ExcelWBook = new XSSFWorkbook(ExcelFile);
 
         ExcelFile.close();
 
-    }
+    }*/
 
     public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {
         String[][] tabArray = null;

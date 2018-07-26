@@ -40,7 +40,7 @@ public class BookingNotCreated {
 
     @DataProvider
     public Object[][] getBookingData() throws Exception{
-        Object[][] testObjArray = ExcelUtils.getTableArray(System.getProperty("user.dir")+"\\data\\BookingNotCreatedData.xlsx","Sheet1");
+        Object[][] testObjArray = ExcelUtils.getTableArray(System.getProperty("user.dir")+"/data/BookingNotCreatedData.xlsx","Sheet1");
         return (testObjArray);
     }
 }

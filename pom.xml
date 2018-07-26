@@ -46,8 +46,8 @@
                         <driver>
                             <name>chromedriver</name>
                             <platform>mac</platform>
-                            <bit>32</bit>
-                            <version>2.22</version>
+                            <bit>64</bit>
+                            <version>2.40</version>
                         </driver>
                     </drivers>
                     <installationDirectory>${project.basedir}/target/tmp_webdrivers</installationDirectory>
